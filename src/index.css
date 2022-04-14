@@ -5,9 +5,151 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* navbar component  */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  height: 60px;
+  padding: 20px ;
+  color: #ffffff;
+}
+.navbar > img{
+  width: 40px;
+  margin-right: 5px;
+}
+.navbar > h1{
+  font-size: 1.5rem;
+  margin-right: auto;
+  font-weight: 600;
+}
+.navbar > h4{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn1{
+  font-family: "karla" sans-serif;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.btn2{
+  font-family: "karla" sans-serif;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px 0 5px;
+}
+.btn3{
+  font-family: "karla" sans-serif;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  color:#ffffff;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+}
+
+/* body components */
+
+main{
+  padding: 2.5rem;
+}
+
+.form{
+  display: grid;
+  grid-template: 2.5em 2.5em / 1fr 1fr;
+  gap: 1rem;
+}
+.form > button{
+  grid-column: 1/-1;
+  font-family: "karla" sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.form > input{
+  border-radius: 5px;
+  font-family: "karla" sans-serif;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+.form > img{
+  width: 50vh;
+}
+
+
+
+/* box components */
+
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;
+ margin: 5px;
+}
+.bottomText{
+  color: forestgreen;
+  
+}
+.topText{
+  color: firebrick;
+ 
+}
+.text{
+  display:inline-block;
+  border: 1px solid black;
+  overflow:scroll;
+}
+
+@media only screen and (max-width:600px) {
+  *{
+    box-sizing: border-box;
+  }
+  .form > button{
+    width: 50%;
+  }
+  .form > input{
+    width: 100%;
+  }
+  .form > img{
+    width: 100%;
+  }
+  .text{
+    width: 100%;
+  }
+  .btn1{
+   font-size: 0.5rem;
+  }
+  .btn2{
+    font-size: 0.5rem;
+   }
+   .btn3{
+    font-size: 0.5rem;
+   }
+   .btns{
+     height: 80px;
+     margin-top: 1em;
+    
+   }
+  .title-f{
+    font-size: 1em;
+  }
 }
